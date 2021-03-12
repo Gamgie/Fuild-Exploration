@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/NVIDIA/Flex Samples/6. Particle Controller/Scene.unity
+    guid: 3084caadd21e45e489eabfaf5561738a
+  - enabled: 1
+    path: Assets/Scenes/Habite/Sea.unity
+    guid: b4d22f8402002fc4f9de70b2406bf0f2
   m_configObjects: {}

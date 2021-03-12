@@ -17,7 +17,7 @@ MonoBehaviour:
   m_simpleSubstepCount: 2
   m_simpleIterationCount: 5
   m_simpleGravity: {x: 0, y: -9.81, z: 0}
-  m_simpleParticleSize: 0.01
+  m_simpleParticleSize: 0.03
   m_simpleParticleFriction: 0.1
   m_simpleParticleRestitution: 0
   m_simpleParticleAdhesion: 0
@@ -40,9 +40,9 @@ MonoBehaviour:
   m_substepCount: 2
   m_iterationCount: 5
   m_gravity: {x: 0, y: -9.81, z: 0}
-  m_radius: 0.015
-  m_solidRest: 0.01
-  m_fluidRest: 0.0095
+  m_radius: 0.044999998
+  m_solidRest: 0.03
+  m_fluidRest: 0.028499998
   m_staticFriction: 0.1
   m_dynamicFriction: 0.1
   m_particleFriction: 0.1
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_diffuseLifetime: 0
   m_plasticThreshold: 0
   m_plasticCreep: 0
-  m_collisionDistance: 0.005
+  m_collisionDistance: 0.015
   m_particleCollisionMargin: 0
   m_shapeCollisionMargin: 0
   m_planes: []
