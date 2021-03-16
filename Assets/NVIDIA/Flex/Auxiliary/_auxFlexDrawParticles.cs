@@ -94,6 +94,8 @@ namespace NVIDIA.Flex
                         m_particleMaterials[i].SetBuffer("_Indices", m_indexBuffers[i]);
                         m_particleMaterials[i].SetFloat("_Radius", ParticleSize());
                         m_particleMaterials[i].SetColor("_Color", SubmeshColor(i));
+                        m_particleMaterials[i].SetFloat("_Metallic", 0.1f);
+                        m_particleMaterials[i].SetFloat("_Glossiness", 0.4f);
                     }
                 }
             }
@@ -125,7 +127,6 @@ namespace NVIDIA.Flex
             if (m_actor == null)
             {
                 Debug.LogError("_auxFlexDrawPartcles should be parented to a FlexActor");
-                Debug.Break();
             }
 
             if (m_actor && m_actor.handle)

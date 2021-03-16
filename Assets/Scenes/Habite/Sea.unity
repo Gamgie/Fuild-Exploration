@@ -23,10 +23,10 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.78
+  m_AmbientIntensity: 0.47
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d9dca9ae1786c394f9e79c637aa9a7bf, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1632833910}
-  m_IndirectSpecularColor: {r: 0.44861978, g: 0.49491864, b: 0.55552346, a: 1}
+  m_IndirectSpecularColor: {r: 0.43598595, g: 0.553596, b: 0.54303765, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -184,6 +184,11 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!20 &790848227 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4151086303029359307, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
+  m_PrefabInstance: {fileID: 4151086301763845495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1632833909
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +217,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.7877358, g: 0.8925245, b: 1, a: 1}
+  m_Color: {r: 0.990566, g: 0.9822567, b: 0.9672036, a: 1}
   m_Intensity: 0.55
   m_Range: 10
   m_SpotAngle: 30
@@ -220,7 +225,7 @@ Light:
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 1
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -293,7 +298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1930509462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,14 +334,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 618458246, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1189760767, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
       propertyPath: directionalLight
       value: 
       objectReference: {fileID: 1632833910}
-    - target: {fileID: 1189760767, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
-      propertyPath: activateSimulation
-      value: 1
+    - target: {fileID: 4151086303029359306, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.89
       objectReference: {fileID: 0}
+    - target: {fileID: 4151086303029359306, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151086303029359307, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 938ee07f037c20b4c930182e7ec56f0a, type: 2}
     - target: {fileID: 4151086303347954126, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -383,7 +400,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151086303347954127, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
       propertyPath: m_Name
-      value: Sea Prefab
+      value: Water Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8351420465396818415, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 790848227}
+    - target: {fileID: 8351420465396818415, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8351420465396818415, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 2.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5284f8a04f5ec2540850b4c5122847c3, type: 3}
